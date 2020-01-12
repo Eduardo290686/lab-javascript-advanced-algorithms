@@ -16,11 +16,11 @@ function StackDataStructure() {
     }
   }
   this.push = function (element) {
-    this.stackControl.push(element);
     let canPushQuestion = this.canPush();
     if (canPushQuestion === false) {
       return 'Stack Overflow';
     }
+    this.stackControl.push(element);
     return this.stackControl;
   }
   this.pop = function () {
