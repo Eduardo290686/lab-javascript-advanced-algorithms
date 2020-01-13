@@ -28,7 +28,7 @@ function paintingQueueElement() {
   queueDataStructure.queueControl.forEach(element => {
     let newElementContainer = document.createElement('div');
     newElementContainer.setAttribute('class', 'element');
-    let newElement = `<p>${element}</p>`;
+    let newElement = `<p class='list-element'>${element}</p>`;
     newElementContainer.innerHTML = newElement;
     queueElementsList.appendChild(newElementContainer);
   })
@@ -39,7 +39,7 @@ function removingQueueElement() {
   queueDataStructure.queueControl.forEach(element => {
     let newElementContainer = document.createElement('div');
     newElementContainer.setAttribute('class', 'element');
-    let newElement = `<p>${element}</p>`;
+    let newElement = `<p class='list-element'>${element}</p>`;
     newElementContainer.innerHTML = newElement;
     queueElementsList.appendChild(newElementContainer);
   })

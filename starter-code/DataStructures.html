@@ -10,21 +10,25 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-    <div>
-      <div class="stack-queue-container">
-        <h2>Stack</h2>
-        <input type="text" placeholder="Add the element to the stack..." id="stack-input"></input>
-        <button id=stack-add-button>ADD</button>
-        <button id='stack-take-button'>TAKE</button>
-        <ul id="stack-elements-list"></ul>
-      </div>
-      <div class="stack-queue-container">
-        <h2>Queue</h2>
-        <input type="text" placeholder="Add the element to the queue..." id="queue-input"></input>
-        <button id=queue-add-button>ADD</button>
-        <button id='queue-take-button'>TAKE</button>
-        <ul id="queue-elements-list"></ul>
+    <div id="main-container">
+      <div>
+        <div class="stack-queue-container">
+          <h2>Stack</h2>
+          <input type="text" placeholder="Add the element to the stack..." id="stack-input"></input>
+          <button id=stack-add-button class="button">ADD</button>
+          <button id='stack-take-button' class="button">TAKE</button>
+          <ul id="stack-elements-list"></ul>
+        </div>
     </div>
+      <div>
+        <div class="stack-queue-container">
+          <h2>Queue</h2>
+          <input type="text" placeholder="Add the element to the queue..." id="queue-input"></input>
+          <button id=queue-add-button class="button">ADD</button>
+          <button id='queue-take-button' class="button">TAKE</button>
+          <ul id="queue-elements-list"></ul>
+        </div>
+      </div>
     </div>
   </section>
   <script src="src/StackDataStructure.js"></script>

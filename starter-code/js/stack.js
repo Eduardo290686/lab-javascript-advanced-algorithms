@@ -28,7 +28,7 @@ stackTakeButton.onclick = function (btn) {
 function paintingStackElement() {
   let newElementContainer = document.createElement('div');
   newElementContainer.setAttribute('class', 'element');
-  let newElement = `<p>${stackDataStructure.stackControl[stackDataStructure.stackControl.length - 1]}</p>`;
+  let newElement = `<p class='list-element'>${stackDataStructure.stackControl[stackDataStructure.stackControl.length - 1]}</p>`;
   newElementContainer.innerHTML = newElement;
   stackElementsList.appendChild(newElementContainer);
 }
@@ -38,7 +38,7 @@ function removingStackElement() {
   stackDataStructure.stackControl.forEach(element => {
     let newElementContainer = document.createElement('div');
     newElementContainer.setAttribute('class', 'element');
-    let newElement = `<p>${element}</p>`;
+    let newElement = `<p class='list-element'>${element}</p>`;
     newElementContainer.innerHTML = newElement;
     stackElementsList.appendChild(newElementContainer);
   })
